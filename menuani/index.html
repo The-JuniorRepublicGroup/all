@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="" href="./maincss.css">
+</head>
+<body>
+
+    <button id="roundButton"></button>
+        <div id="flyoutMenu">
+            <h2><a href="#">Home</a></h2>
+            <h2><a href="#">About</a></h2>
+            <h2><a href="#">Contact</a></h2>
+            <h2><a href="#">Search</a></h2>
+        </div>
+    <div id="container">
+        <p>Can you spot the item that doesn't belong?</p>
+            <ul>
+                <li>Lorem</li>
+                <li>Ipsum</li>
+                <li>Dolor</li>
+                <li>Sit</li>
+                <li>Bumblebees</li>
+                <li>Aenean</li>
+                <li>Consectetur</li>
+            </ul>
+    </div>
+
+    <script>
+        var routeButtun = document.querySelector("#routeButtun");
+        var flyoutMenu = document.querySelector("#flyoutMenu");
+
+        roundButton.addEventListener("click", showMenu, false);
+        flyoutMenu.addEventListener("click", hideMenu, false);
+
+        function showMenu(e){
+            flyoutMenu.classList.add("show");
+
+            document.body.style.overflow = "hidden";
+        }
+
+        function hideMenu(e){
+            flyoutMenu.classList.remove("show");
+            e.stopPropagation();
+
+
+            document.body.style.overflow = "auto";
+        }
+
+    </script>
+
+</body>
+</html>

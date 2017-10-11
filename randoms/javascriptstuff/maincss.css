@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1, p{
+    text-align: center;
+    padding: 20px 0;
+}
+
+.jumbotron{
+    background: #ccc;
+}
